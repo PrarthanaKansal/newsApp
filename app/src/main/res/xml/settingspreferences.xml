@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<EditTextPreference-->
+        <!--android:key="Source"-->
+        <!--android:defaultValue="the-verge"-->
+        <!--android:title="Source"-->
+        <!--android:dialogTitle="Enter new source"-->
+        <!--/>-->
+
+    <ListPreference
+        android:key="Source"
+        android:entries="@array/source_labels"
+        android:entryValues="@array/source_values"
+        android:defaultValue="the-verge"
+        android:title="Source"
+        android:dialogTitle="Select a news source"
+        />
+    <EditTextPreference
+        android:key="Alarm"
+        android:title="Alarm"
+        android:defaultValue="1*60*1000"
+        android:dialogTitle="Enter time in ms"
+        android:id="@+id/time"
+        />
+
+
+</PreferenceScreen>

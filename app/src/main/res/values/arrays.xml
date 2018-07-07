@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="source_labels">
+        <item>The Verge</item>
+        <item>BBC News</item>
+        <item>ABC News</item>
+        <item>Al Jazeera English</item>
+
+</array>
+    <array name="source_values">
+        <item>the-verge</item>
+        <item>bbc-news</item>
+        <item>abc-news-au</item>
+        <item>al-jazeera-english</item>
+    </array>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding10"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/article_img"
+            android:background="#b5b4b4"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/article_title"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:layout_below="@+id/article_img"
+            android:layout_centerHorizontal="true"
+            android:text="Title"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:textColor="#090e0a"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/article_title"
+            android:id="@+id/article_des"
+            android:fontFamily="sans-serif"
+            android:text="Description"
+            android:textSize="10sp"
+            android:textColor="#090e0a"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_below="@+id/article_des"
+            tools:ignore="NotSibling">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_below="@+id/article_des"
+                android:id="@+id/story"
+                android:layout_weight=".5"
+                android:text="Read Full Story On:"
+                android:textSize="10sp"
+                android:textColor="#090e0a"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:layout_below="@id/article_des"
+                android:layout_toRightOf="@+id/story"
+                android:textSize="10sp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/url"
+                android:textColor="#4343bb"
+                android:text="URL"
+                android:autoLink="web"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
